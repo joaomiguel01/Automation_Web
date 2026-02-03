@@ -1,0 +1,270 @@
+/* General Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #0C0A14;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.contact-btn button{
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #1D6DE0;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover, form .send-btn input:hover{
+    box-shadow: 0px 0px 15px 4px #1d6ee088;
+    transform: scale(1.1);
+}
+
+h2.title{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.title span{
+    color: #1d6ee0;
+}
+
+/* Header Style */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #5c5c55;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.1);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 80px;
+}
+
+/* Site-Top Style */
+section.site-top{
+    padding: 40px 4%;
+}
+
+section.site-top .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.site-top h1{
+    color: #fff;
+    font-size: 46px;
+    line-height: 45px;
+}
+
+.site-top .txt-site-top h1 span{
+    color: #1d6ee0;
+}
+
+.site-top .txt-site-top p{
+    color: #fff;
+    margin: 40px 0;
+    font-size: 23px;
+}
+
+.site-top .img-site-top img{
+    position: relative;
+    animation: float 2s ease-in-out infinite alternate;
+}
+
+@keyframes float{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* Projects Style */
+section.projects{
+    padding: 80px 4%;
+    margin: 40px 0;
+    box-shadow: 0 0 40px 10px #ffffff36;
+}
+
+section.projects .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-color: #1D6DE0;
+    background-size: cover;
+    background-position: 100% 0;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    transition: 8s;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a5;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* Form-Contact Style */
+section.form{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #272727;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: #1D6DE0;
+}
+
+form textarea{
+    resize: none;
+    padding: 10px 15px;
+    max-height: 200px;
+}
+
+form .send-btn{
+    margin: 20px 0;
+    text-align: center;
+}
+
+form .send-btn input{
+    width: 120px;
+    background-color: #1D6DE0;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* Footer Style */
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff36;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.border{
+    border-top: 2px solid #1D6DE0;
+}
+
+footer .line-footer p i{
+    color: #1D6DE0;
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-btn button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #1D6DE0;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 3px;
+    transition: .2s;
+}
